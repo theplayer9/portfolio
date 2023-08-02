@@ -19,7 +19,6 @@ function App() {
           <StarsCanvas />
         </div>
        </div> 
-
     </BrowserRouter>
   )
 }
