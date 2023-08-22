@@ -18,11 +18,30 @@ const Hero = () => {
             Hey, I'm <span className="text-[#915eff]">Om</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100 `}>
-          SWE'23 Intern @Microsoft | @Google DSC Lead | Microsoft Engage '22 | Ex-intern @ScogoNetworks | Front end web developer | Speaker | Learner
+            SWE'23 Intern @Microsoft | @Google DSC Lead | Microsoft Engage '22 |
+            Ex-intern @ScogoNetworks | Front end web developer | Speaker |
+            Learner
           </p>
         </div>
       </div>
       <ComputersCanvas />
+      <div className="absolute xs:bottom-10  bottom-32 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <motion.dev
+              animate={{
+                y: [0, 28, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
+            />
+          </div>
+        </a>
+      </div>
     </section>
   );
 };
